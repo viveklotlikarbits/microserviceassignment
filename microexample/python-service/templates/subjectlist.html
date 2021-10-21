@@ -1,0 +1,17 @@
+<form action="http://localhost:3000/list" method="post" >
+
+<table cellspacing="10">
+<tr>
+ <th> Subject </th>
+ <th> Weightage </th>
+ <th> Select One </th>
+</tr>
+{% for name in names %}
+<tr>
+ <td> {{names[i]}} </td>
+ <td> {{weight[i]}} </td>
+ <td> <input type="radio" name="option" id="1" value={{name[i]}} /> </td>
+
+</table> 
+
+</form>
